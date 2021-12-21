@@ -47,6 +47,11 @@ public class Parallelogram extends Quadrilateral{
 
     @Override
     public void area() {
-
+            double side  = Math.sqrt((point2.getX() - point1.getX()) * (point2.getX() - point1.getX()) + (point2.getY() - point1.getY())*(point2.getY() - point1.getY()));
+            double height = Math.abs(point2.getY() - point3.getY());
+            double area = side*height;
+        System.out.println("Width is: "+ side);
+        System.out.println("height is: "+height);
+        System.out.println("Area is: "+area);
     }
 }
