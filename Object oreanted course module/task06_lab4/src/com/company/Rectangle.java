@@ -47,8 +47,8 @@ public class Rectangle extends Quadrilateral{
 
     @Override
     public void area() {
-       double side1 = Math.sqrt((point2.getX() - point1.getX()) * (point2.getX() - point1.getX()) + (point2.getY() - point1.getY())*(point2.getY() - point1.getY()));
-       double side2 = Math.sqrt((point2.getX() - point3.getX()) * (point2.getX() - point3.getX()) + (point2.getY() - point3.getY())*(point2.getY() - point3.getY()));
+       double side1 = Math.sqrt((getPoint2().getX() - getPoint1().getX()) * (getPoint2().getX() - getPoint1().getX()) + (getPoint2().getY() - getPoint1().getY())*(getPoint2().getY() - getPoint1().getY()));
+       double side2 = Math.sqrt((getPoint2().getX() - getPoint3().getX()) * (getPoint2().getX() - getPoint3().getX()) + (getPoint2().getY() - getPoint3().getY())*(getPoint2().getY() - getPoint3().getY()));
         System.out.println("Width is: " + side1);
         System.out.println("Height is: "+side2);
         System.out.println("Area is: "+side1*side2);

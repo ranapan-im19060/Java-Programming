@@ -1,10 +1,10 @@
 package com.company;
 
 abstract class Quadrilateral {
-    Point point1;
-    Point point2;
-    Point point3;
-    Point point4;
+    private Point point1;
+    private Point point2;
+    private Point point3;
+    private Point point4;
 
     public Quadrilateral(Point point1, Point point2, Point point3, Point point4) {
         this.point1 = point1;

@@ -46,7 +46,7 @@ public class Square extends Quadrilateral{
     }
 
     public void area(){
-        double side = Math.sqrt((point2.getX() - point1.getX()) * (point2.getX() - point1.getX()) + (point2.getY() - point1.getY())*(point2.getY() - point1.getY()));
+        double side = Math.sqrt((getPoint2().getX() - getPoint1().getX()) * (getPoint2().getX() - getPoint1().getX()) + (getPoint2().getY() - getPoint1().getY())*(getPoint2().getY() - getPoint1().getY()));
         System.out.println("Side is: "+side);
         System.out.println("Area is: "+side*side);
     }

@@ -47,9 +47,9 @@ public class Trapezoid extends Quadrilateral{
 
     @Override
     public void area() {
-        double side1 = Math.sqrt((point2.getX() - point1.getX()) * (point2.getX() - point1.getX()) + (point2.getY() - point1.getY())*(point2.getY() - point1.getY()));
-        double side2 = Math.sqrt((point4.getX() - point3.getX()) * (point4.getX() - point3.getX()) + (point4.getY() - point3.getY())*(point4.getY() - point3.getY()));
-        double height = Math.abs(point2.getY() - point3.getY()); /* important */
+        double side1 = Math.sqrt((getPoint2().getX() - getPoint1().getX()) * (getPoint2().getX() - getPoint1().getX()) + (getPoint2().getY() - getPoint1().getY())*(getPoint2().getY() - getPoint1().getY()));
+        double side2 = Math.sqrt((getPoint4().getX() - getPoint3().getX()) * (getPoint4().getX() - getPoint3().getX()) + (getPoint4().getY() - getPoint3().getY())*(getPoint4().getY() - getPoint3().getY()));
+        double height = Math.abs(getPoint2().getY() - getPoint3().getY()); /* important */
         System.out.println("Height is: "+height);
         double area = 0.5 * (side1+side2) * height;
         System.out.println("Area is: "+area);
