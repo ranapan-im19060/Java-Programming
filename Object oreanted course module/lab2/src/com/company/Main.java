@@ -3,6 +3,20 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
+
+        SeatType seatA = new SeatType(10,500);
+        SeatType seatB = new SeatType(20,250);
+        SeatType seatC = new SeatType(30,150);
+
+        int totalSales = seatA.getNumberOfTicketSold()*seatA.getPriceOfTheTicket() + seatB.getNumberOfTicketSold()*seatB.getPriceOfTheTicket()  + seatC.getNumberOfTicketSold()*seatC.getPriceOfTheTicket();
+        System.out.println("Total Sales " + totalSales);
+
+
+
+
+
+
 	 /*
 	 Task 01
 
@@ -56,9 +70,9 @@ public class Main {
 
 
 
+/*
 
 
-        /*
      //Task 4
         GradeBook gradeBook1 = new GradeBook("CS101");
         gradeBook1.setInstructor("Chinthaka");
@@ -87,12 +101,12 @@ public class Main {
         System.out.println(employee2.getSalary());*/
 
         //Task 06
-
+/*
         SeatType seatA = new SeatType(10,500);
         SeatType seatB = new SeatType(20,250);
         SeatType seatC = new SeatType(30,150);
 
         int totalSales = seatA.getNumberOfTicketSold()*seatA.getPriceOfTheTicket() + seatB.getNumberOfTicketSold()*seatB.getPriceOfTheTicket()  + seatC.getNumberOfTicketSold()*seatC.getPriceOfTheTicket();
-        System.out.println("Total Sales " + totalSales);
+        System.out.println("Total Sales " + totalSales);*/
     }
 }
