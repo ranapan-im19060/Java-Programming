@@ -21,7 +21,7 @@ public class Account {
     public void debit(double debitValue){
         if(balance-debitValue>=0){
                 balance = balance - debitValue;
-                System.out.println("Withdraw amount " + debitValue);
+                System.out.println("Withdraw amount --> " + debitValue);
                 System.out.println("Your current value " + balance);
         }else {
             System.out.println("Debit amount exceeded account balance.\" ");
